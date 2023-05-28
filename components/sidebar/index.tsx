@@ -1,65 +1,38 @@
 'use client'
+import { NavItem } from './nav-item'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import clsx from 'clsx'
 import Image from 'next/image'
-import avatar from '../app/avatar.jpg'
+import avatar from '../../app/avatar.jpg'
 import {
-  AddressCardIcon,
-  BriefcaseIcon,
-  ContactIcon,
-  GraduationCapIcon,
-  SettingIcon,
-} from './icons'
-import { ReactNode } from 'react'
+  NewspapperIcon,
+  ClipboardIcon,
+  PhoneMissedCallIcon,
+  AcademicCapIcon,
+  ArchiveIcon,
+} from '../icons'
 
 const navItems = {
   '/': {
     name: 'Summary',
-    icon: <AddressCardIcon />,
+    icon: <NewspapperIcon size={32} />,
   },
   '/experience': {
     name: 'Experience',
-    icon: <BriefcaseIcon />,
+    icon: <ClipboardIcon size={32} />,
   },
   '/skill': {
     name: 'Skill',
-    icon: <SettingIcon />,
+    icon: <ArchiveIcon size={32} />,
   },
   '/education': {
     name: 'Education',
-    icon: <GraduationCapIcon />,
+    icon: <AcademicCapIcon size={32} />,
   },
   '/contact': {
     name: 'Contact Us',
-    icon: <ContactIcon />,
+    icon: <PhoneMissedCallIcon size={32} />,
   },
-}
-
-function NavItem({
-  name,
-  isActive,
-  icon,
-}: {
-  name: string
-  isActive: boolean
-  icon: ReactNode
-}) {
-  return (
-    <div
-      className={clsx(
-        'h-20 flex flex-row gap-5 w-full items-center pl-11 rounded-s-full mb-1 text-neutral-400 relative',
-        {
-          'bg-neutral-100': isActive,
-          'text-orange-500': isActive,
-        }
-      )}>
-      <div className={clsx({ 'nav-item__active-up': isActive })} />
-      {icon}
-      <span className='text-xl'>{name}</span>
-      <div className={clsx({ 'nav-item__active-down': isActive })} />
-    </div>
-  )
 }
 
 export default function Navbar() {

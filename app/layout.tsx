@@ -24,7 +24,7 @@ export default function RootLayout({
         <Sidebar />
         <main className='flex flex-col flex-auto px-9 py-11'>
           <Header />
-          <section className='flex-grow flex flex-col overflow-hidden overflow-y-auto bar'>
+          <section className='flex-grow flex flex-col overflow-hidden overflow-y-auto'>
             {children}
           </section>
         </main>

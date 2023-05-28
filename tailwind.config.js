@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     './app/**/*.{ts,tsx}',
@@ -6,7 +8,15 @@ module.exports = {
     './content/**/*.mdx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        neutral: colors.gray,
+        accent: colors.orange,
+        success: colors.green,
+        warning: colors.yellow,
+        danger: colors.red,
+      },
+    },
   },
   plugins: [],
 }

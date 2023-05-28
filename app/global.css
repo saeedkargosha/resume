@@ -25,3 +25,31 @@ html {
 .nav-item__active-down::after {
   @apply content-[''] absolute bg-neutral-50 right-0 -bottom-16 h-16 w-[78px] rounded-tr-full;
 }
+
+.input {
+  @apply bg-gray-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.label {
+  @apply block mb-2 text-sm font-medium text-neutral-900 dark:text-white;
+}
+
+.btn {
+  @apply font-normal py-[14px] px-[10px] rounded-md;
+}
+
+.btn-primary {
+  @apply bg-accent-500 hover:bg-accent-700 text-neutral-50;
+}
+
+.btn-secondary {
+  @apply bg-transparent border border-neutral-300   text-neutral-900;
+}
+
+::-webkit-scrollbar {
+  @apply w-3 bg-neutral-50 rounded-tr-2xl rounded-br-2xl;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-200 rounded-3xl border-[10px] border-neutral-50;
+}

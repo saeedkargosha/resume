@@ -1,11 +1,8 @@
+import { createIcon } from './IconBase'
+
 export function EmailIcon() {
-  return (
-    <svg
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      xmlns='http://www.w3.org/2000/svg'>
+  return createIcon(
+    <>
       <path
         d='M2.40402 7.06025L12 11.8582L21.596 7.06019C21.5236 5.79977 20.4786 4.79999 19.2 4.79999H4.80002C3.52145 4.79999 2.47639 5.7998 2.40402 7.06025Z'
         fill='#111827'
@@ -14,6 +11,6 @@ export function EmailIcon() {
         d='M21.6 9.74147L12 14.5415L2.40002 9.74153V16.8C2.40002 18.1255 3.47454 19.2 4.80002 19.2H19.2C20.5255 19.2 21.6 18.1255 21.6 16.8V9.74147Z'
         fill='#111827'
       />
-    </svg>
+    </>
   )
 }

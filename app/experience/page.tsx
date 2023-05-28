@@ -40,13 +40,13 @@ export default function Experinces() {
   return (
     <div className='bg-neutral-50 py-6 rounded-2xl space-y-11'>
       <Experince />
-      <div className='w-full h-[3px] bg-neutral-100' />
+      <div className='w-full h-1 bg-neutral-100' />
       <Experince />
-      <div className='w-full h-[3px] bg-neutral-100' />
+      <div className='w-full h-1 bg-neutral-100' />
       <Experince />
-      <div className='w-full h-[3px] bg-neutral-100' />
+      <div className='w-full h-1 bg-neutral-100' />
       <Experince />
-      <div className='w-full h-[2px] bg-neutral-200' />
+      <div className='w-full h-1 bg-neutral-100' />
       <Experince />
     </div>
   )

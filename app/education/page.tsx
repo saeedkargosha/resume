@@ -1,7 +1,7 @@
 function Education() {
   return (
     <div className='flex flex-row gap-16 px-9'>
-      <div className='flex flex-col gap-3'>
+      <div className='flex flex-col gap-3 w-10/12'>
         <h2 className='text-neutral-800 font-medium text-xl'>
           {"Bachelor's Degree in Computer Software Engineering"}
         </h2>
@@ -12,7 +12,7 @@ function Education() {
           }
         </div>
       </div>
-      <div>
+      <div className='w-2/12'>
         <div className='text-neutral-400 text-sm text-center'>
           {'(02/2020 - 02/2022)'}
           <div>{'Sirjan - Iran'}</div>
@@ -24,7 +24,9 @@ function Education() {
 
 export default function Educations() {
   return (
-    <div className='bg-neutral-50 py-6 px-9 rounded-2xl'>
+    <div className='bg-neutral-50 rounded-2xl space-y-11 py-6'>
+      <Education />
+      <div className='w-full h-1 bg-neutral-100' />
       <Education />
     </div>
   )
