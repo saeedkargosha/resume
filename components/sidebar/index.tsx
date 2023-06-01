@@ -12,26 +12,26 @@ import {
   ArchiveIcon,
 } from '../icons'
 
-const navItems = {
+export const navItems = {
   '/': {
     name: 'Summary',
-    icon: <NewspapperIcon size={32} />,
+    icon: NewspapperIcon,
   },
   '/experience': {
     name: 'Experience',
-    icon: <ClipboardIcon size={32} />,
+    icon: ClipboardIcon,
   },
   '/skill': {
     name: 'Skill',
-    icon: <ArchiveIcon size={32} />,
+    icon: ArchiveIcon,
   },
   '/education': {
     name: 'Education',
-    icon: <AcademicCapIcon size={32} />,
+    icon: AcademicCapIcon,
   },
   '/contact': {
     name: 'Contact Us',
-    icon: <PhoneMissedCallIcon size={32} />,
+    icon: PhoneMissedCallIcon,
   },
 }
 
@@ -58,15 +58,19 @@ export default function Navbar() {
           {'Senior Front End Developer'}
         </span>
       </div>
-      <nav className='flex flex-col mt-14 w-full pl-16'>
-        {Object.entries(navItems).map(([path, { name, icon }]) => {
-          const isActive = path === pathname
-          return (
-            <Link key={path} href={path}>
-              <NavItem name={name} isActive={isActive} icon={icon} />
-            </Link>
-          )
-        })}
+      <nav className='flex flex-col mt-14 w-full'>
+        <ul className='list-none'>
+          {Object.entries(navItems).map(([path, { name, icon }]) => {
+            const isActive = path === pathname
+            return (
+              <li key={path}>
+                <Link href={path}>
+                  <NavItem name={name} isActive={isActive} icon={icon} />
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
       </nav>
     </aside>
   )
