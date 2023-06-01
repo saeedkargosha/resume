@@ -7,7 +7,7 @@ import { ROUTES } from './routes'
 export default function NavigationBar() {
   let pathname = usePathname() || '/'
   return (
-    <nav className='flex lg:hidden justify-center items-center py-5 bg-neutral-50 shadow-xl text-neutral-400'>
+    <nav className='flex xl:hidden justify-center items-center py-5 bg-neutral-50 shadow-xl text-neutral-400'>
       <ul className='flex gap-10 items-center'>
         {Object.entries(ROUTES).map(([path, { icon }]) => {
           const isActive = path === pathname
