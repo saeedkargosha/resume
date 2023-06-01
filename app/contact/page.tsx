@@ -4,7 +4,7 @@ export default function ContactUs() {
       <form className='w-4/5'>
         <div className='flex flex-col lg:flex-row items-center gap-8 lg:gap-14 w-full'>
           <div className='w-full'>
-            <label htmlFor='name' className='label'>
+            <label htmlFor='name' className='label-input'>
               {'First name'}
             </label>
             <input
@@ -16,7 +16,7 @@ export default function ContactUs() {
             />
           </div>
           <div className='w-full'>
-            <label htmlFor='email' className='label'>
+            <label htmlFor='email' className='label-input'>
               {'Email'}
             </label>
             <input
@@ -29,7 +29,7 @@ export default function ContactUs() {
           </div>
         </div>
         <div className='mt-9'>
-          <label htmlFor='memo' className='label'>
+          <label htmlFor='memo' className='label-input'>
             {'Text'}
           </label>
           <textarea
