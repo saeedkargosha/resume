@@ -1,0 +1,58 @@
+export const skills = [
+  {
+    title: 'Languages and Frameworks',
+    skills: [
+      'JavaScript',
+      'TypeScript',
+      'Node.js',
+      'Nest.js',
+      'GraphQL',
+      'React',
+      'React Native',
+      'Next.js',
+      'Electron.js',
+      'Postgress',
+      'Prisma(ORM)',
+      'minIO',
+    ],
+  },
+  {
+    title: 'Packages',
+    skills: [
+      'Cypress',
+      'Gatsby',
+      'Slate.js',
+      'Storybook',
+      'Tailwindcss',
+      'StyledCompoents',
+      'Jest',
+      'Material-UI',
+      'Prime-React',
+      'Sentry',
+      'React Router',
+    ],
+  },
+  {
+    title: 'Tools',
+    skills: [
+      'Git',
+      'Docker',
+      'Webpack',
+      'WebSocket',
+      'CodePush',
+      'Firebase',
+      'CSS Module',
+      'Figma',
+      'SASS',
+      'Vite',
+    ],
+  },
+  {
+    title: 'State Management',
+    skills: ['React-Query', 'Redux', 'ApolloClient', 'Mobx'],
+  },
+  {
+    title: 'Related Proficiencie',
+    skills: ['Android', 'Swift', 'Express.js', 'MongoD'],
+  },
+]

@@ -1,8 +1,8 @@
 export default function ContactUs() {
   return (
-    <div className='flex flex-row bg-neutral-50 py-24 px-9 rounded-2xl justify-center items-center'>
+    <div className='flex lg:flex-row lg:py-24 lg:px-9 rounded-2xl justify-center items-center'>
       <form className='w-4/5'>
-        <div className='flex items-center gap-14 w-full'>
+        <div className='flex flex-col lg:flex-row items-center gap-8 lg:gap-14 w-full'>
           <div className='w-full'>
             <label htmlFor='name' className='label'>
               {'First name'}

@@ -1,36 +1,28 @@
-function Experince() {
+import { Fragment } from 'react'
+import { experiences, Experience } from './data'
+
+function Experince({ experience }: { experience: Experience }) {
   return (
-    <div className='flex flex-row gap-16 px-9'>
-      <div className='flex flex-col gap-3'>
-        <h2 className='text-neutral-800 font-medium text-xl'>
-          {'Senior Frontend Engineer'}
+    <div className='flex flex-row gap-16 lg:px-9'>
+      <div className='flex flex-col'>
+        <h2 className='text-neutral-900 text-sm font-bold lg:text-xl mb-1'>
+          {`${experience.title}, `}
+          <a
+            href={experience.link}
+            target='_blank'
+            className='text-neutral-400 font-normal text-xs lg:text-sm'>
+            {experience.company}
+          </a>
         </h2>
-        <ul className='space-y-3 list-disc pl-6'>
-          <li className='text-neutral-600 text-base'>
-            {
-              'Developing blockchain-based software and technology, mesh network communication solutions and enterprise software products.'
-            }
-          </li>
-          <li className='text-neutral-600 text-base'>
-            {
-              'Used cryptocurrencies to develop e-commerce transactions in a fully decentralized marketplace.'
-            }
-          </li>
-          <li className='text-neutral-600 text-base'>
-            {
-              'Planned a chat system to connect customers and get more information before purchasing.'
-            }
-          </li>
-          <li className='text-neutral-600 text-base'>
-            {'Designed the app according to design systems with Figma'}
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div className='text-neutral-400 text-sm text-center'>
-          {'(03/2022 - Present'}
-          <div>{'Slovakia, Remote'}</div>
+        <div className='flex gap-5 text-neutral-400 text-xs lg:text-sm font-medium text-center mb-5'>
+          <div>{`${experience.country}, ${experience.type}`}</div>
+          {`(${experience.start} - ${experience.end})`}
         </div>
+        <ul className='space-y-3 list-disc pl-6 text-neutral-600 font-medium text-sm lg:text-base'>
+          {experience.bulletPoints.map((bulletPoint, index) => (
+            <li key={index}>{bulletPoint}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )
@@ -38,16 +30,13 @@ function Experince() {
 
 export default function Experinces() {
   return (
-    <div className='bg-neutral-50 py-6 rounded-2xl space-y-11'>
-      <Experince />
-      <div className='w-full h-1 bg-neutral-100' />
-      <Experince />
-      <div className='w-full h-1 bg-neutral-100' />
-      <Experince />
-      <div className='w-full h-1 bg-neutral-100' />
-      <Experince />
-      <div className='w-full h-1 bg-neutral-100' />
-      <Experince />
+    <div className='lg:py-6 space-y-11'>
+      {experiences?.map(experience => (
+        <Fragment key={experience.company}>
+          <Experince experience={experience} />
+          <div className='w-full h-[2px] bg-neutral-200' />
+        </Fragment>
+      ))}
     </div>
   )
 }

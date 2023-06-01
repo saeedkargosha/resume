@@ -2,7 +2,15 @@ import './global.css'
 import { Lexend } from 'next/font/google'
 import clsx from 'clsx'
 import Sidebar from '../components/sidebar'
-import Header from '@/components/header'
+import Header from '@/components/header/header-desktop'
+import {
+  DribbbleIcon,
+  GithubIcon,
+  LinkdinIcon,
+  MenuIcon,
+} from '@/components/icons'
+import NavigationBar from '@/components/navigation-bar'
+import HeaderMobile from '@/components/header/header-mobile'
 
 const lexend = Lexend({ subsets: ['latin'] })
 
@@ -20,14 +28,16 @@ export default function RootLayout({
     <html
       lang='en'
       className={clsx('text-black bg-neutral-100', lexend.className)}>
-      <body className='flex flex-row h-screen w-screen overflow-hidden'>
+      <body className='flex flex-col xl:flex-row h-screen w-screen overflow-hidden'>
+        <HeaderMobile />
         <Sidebar />
-        <main className='flex flex-col flex-auto px-9 py-11'>
+        <main className='flex flex-col overflow-hidden mx-5 my-6 xl:mx-9 xl:my-11 flex-grow'>
           <Header />
-          <section className='flex-grow flex flex-col overflow-hidden overflow-y-auto'>
+          <section className='hide-scrollbar p-3 flex-grow flex flex-col overflow-hidden overflow-y-auto bg-gray-50 rounded-2xl'>
             {children}
           </section>
         </main>
+        <NavigationBar />
       </body>
     </html>
   )

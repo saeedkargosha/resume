@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-export type Sizes = 12 | 16 | 20 | 24 | 32
+export type Sizes = 12 | 16 | 20 | 24 | 32 | 36
 
 export interface IconProps
   extends Omit<

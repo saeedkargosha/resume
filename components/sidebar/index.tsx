@@ -38,7 +38,7 @@ const navItems = {
 export default function Navbar() {
   let pathname = usePathname() || '/'
   return (
-    <aside className='flex flex-col md:w-[356px] md:flex-shrink-0 py-11 h-screen bg-neutral-50'>
+    <aside className='hidden xl:flex flex-col md:w-[356px] md:flex-shrink-0 py-11 h-screen bg-neutral-50'>
       <div className='flex flex-col items-center mb-8'>
         <div className='w-28 h-28 rounded-full mb-3 overflow-hidden'>
           <Image

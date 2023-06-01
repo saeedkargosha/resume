@@ -1,22 +1,26 @@
-function Education() {
-  return (
-    <div className='flex flex-row gap-16 px-9'>
-      <div className='flex flex-col gap-3 w-10/12'>
-        <h2 className='text-neutral-800 font-medium text-xl'>
-          {"Bachelor's Degree in Computer Software Engineering"}
-        </h2>
+import { Fragment } from 'react'
+import { Education, educations } from './data'
 
-        <div className='text-neutral-600 text-base'>
-          {
-            'During my time at university, I started an association focused on computer skills training for students. This allowed me to use my knowledge and expertise to help others learn new skills that would benefit them in their future careers.'
-          }
+function EducationItem({ education }: { education: Education }) {
+  return (
+    <div className='flex flex-row gap-16 lg:px-9'>
+      <div className='flex flex-col'>
+        <h2 className='text-neutral-900 text-sm font-bold lg:text-xl mb-1'>
+          {`${education.title}, `}
+          <a
+            href={education.link}
+            target='_blank'
+            className='text-neutral-400 font-normal text-xs lg:text-sm'>
+            {education.university}
+          </a>
+        </h2>
+        <div className='flex gap-5 text-neutral-400 text-xs lg:text-sm font-medium text-center mb-5'>
+          <div>{`${education.country}`}</div>
+          {`(${education.start} - ${education.end})`}
         </div>
-      </div>
-      <div className='w-2/12'>
-        <div className='text-neutral-400 text-sm text-center'>
-          {'(02/2020 - 02/2022)'}
-          <div>{'Sirjan - Iran'}</div>
-        </div>
+        <p className='text-neutral-600 font-medium text-sm lg:text-base leading-7 lg:leading-9'>
+          {education.des}
+        </p>
       </div>
     </div>
   )
@@ -24,10 +28,10 @@ function Education() {
 
 export default function Educations() {
   return (
-    <div className='bg-neutral-50 rounded-2xl space-y-11 py-6'>
-      <Education />
-      <div className='w-full h-1 bg-neutral-100' />
-      <Education />
+    <div className='space-y-11 lg:py-6'>
+      {educations.map(education => (
+        <EducationItem key={education.title} education={education} />
+      ))}
     </div>
   )
 }
