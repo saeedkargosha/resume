@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className='lg:py-6 lg:px-9'>
-      <p className='text-base lg:text-xl text-neutral-600 leading-10 lg:leading-[50px]'>
+      <p className='text-neutral-600 font-medium text-sm leading-7 lg:text-xl lg:leading-[50px]'>
         {
           'I am a self-taught JavaScript developer with over 7 years of programming experience. I have worked on multiple international projects of various scales in mobile, web apps, and backend development.'
         }
