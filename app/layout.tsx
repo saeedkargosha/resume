@@ -27,8 +27,11 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={clsx('text-black bg-neutral-100', lexend.className)}>
-      <body className='flex flex-col xl:flex-row h-screen w-screen overflow-hidden'>
+      className={clsx(
+        'text-black bg-neutral-100 h-full w-full',
+        lexend.className
+      )}>
+      <body className='flex flex-col xl:flex-row h-full w-full overflow-hidden'>
         <HeaderMobile />
         <Sidebar />
         <main className='flex flex-col overflow-hidden mx-5 my-6 xl:mx-9 xl:my-11 flex-grow'>
