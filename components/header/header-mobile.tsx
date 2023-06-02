@@ -26,7 +26,9 @@ export default function HeaderMobile() {
   return (
     <div className='xl:hidden'>
       <header className='flex w-full justify-between px-5 pt-8 items-center relative'>
-        <MenuIcon onClick={toggle} className='cursor-pointer' />
+        <button onClick={toggle} className='cursor-pointer'>
+          <MenuIcon />
+        </button>
         <span className='text-accent-500 text-base font-medium absolute left-[50%] -translate-x-[50%]'>
           {ROUTES[pathname].name}
         </span>
@@ -36,13 +38,18 @@ export default function HeaderMobile() {
           <SocialItem social={SOCIALS.linkdin} />
         </div>
       </header>
-      <div className={clsx('hidden relative', { '!block': isOpen })}>
-        <div className='fixed inset-0 bg-neutral-100'></div>
+      <div className={clsx('relative')}>
+        <div
+          className={clsx('inset-0 bg-neutral-100 hidden', {
+            '!block fixed': isOpen,
+          })}
+        />
         <nav
+          role='navigation'
           className={clsx(
-            'fixed top-0 -left-[100%] transition-[left] delay-500 bottom-0 flex flex-col w-9/12 max-w-sm py-6 px-5 bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
+            'fixed top-0 left-0 transition-all ease-in-out duration-500 md:transition-none w-0 py-6 px-0 bottom-0 flex flex-col  max-w-sm bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
             {
-              '!left-0': isOpen,
+              '!w-9/12 !px-5': isOpen,
             }
           )}>
           <div className='flex flex-col items-center w-fit'>
@@ -103,15 +110,21 @@ export default function HeaderMobile() {
             </div>
           </div>
         </nav>
-        <div className='space-y-4 absolute right-0 flex flex-col items-center w-3/12'>
-          <div
+        <div
+          className={clsx(
+            'space-y-4 absolute right-0 hidden  flex-col items-center w-3/12',
+            {
+              '!flex': isOpen,
+            }
+          )}>
+          <button
             className='bg-neutral-900 flex justify-center items-center rounded-full h-9 w-9 text-neutral-50'
             onClick={toggle}>
             <CloseIcon size={20} />
-          </div>
-          <div className='bg-neutral-200 flex justify-center items-center rounded-full h-9 w-9 text-accent-600'>
+          </button>
+          <button className='bg-neutral-200 flex justify-center items-center rounded-full h-9 w-9 text-accent-600'>
             <LightBulbIcon />
-          </div>
+          </button>
           <span className='text-neutral-400 text-xs font-normal'>
             {'Dark Mode'}
           </span>
