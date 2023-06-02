@@ -64,7 +64,7 @@ export default function Navbar() {
             const isActive = path === pathname
             return (
               <li key={path}>
-                <Link href={path}>
+                <Link href={path} className='active:bg-transparent'>
                   <NavItem name={name} isActive={isActive} icon={icon} />
                 </Link>
               </li>

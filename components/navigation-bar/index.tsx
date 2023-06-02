@@ -14,7 +14,7 @@ export default function NavigationBar() {
           const Icon = icon as any
           return (
             <li key={path}>
-              <Link href={path}>
+              <Link href={path} className='active:bg-transparent'>
                 <Icon
                   size={isActive ? 36 : 24}
                   className={clsx({ '!text-accent-600': isActive })}

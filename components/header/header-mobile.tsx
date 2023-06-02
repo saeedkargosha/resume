@@ -43,7 +43,7 @@ export default function HeaderMobile() {
         <div className='fixed inset-0 bg-neutral-100'></div>
         <nav
           className={clsx(
-            'fixed top-0 -left-[100%] transition-[left] delay-500 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-7 bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
+            'fixed top-0 -left-[100%] transition-[left] delay-500 bottom-0 flex flex-col w-5/7 max-w-sm py-6 px-7 bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
             {
               '!left-0': isOpen,
             }
@@ -72,14 +72,14 @@ export default function HeaderMobile() {
               const isActive = path === pathname
               return (
                 <li key={path}>
-                  <Link href={path}>
+                  <Link href={path} className='active:bg-transparent'>
                     <NavItem name={name} isActive={isActive} icon={icon} />
                   </Link>
                 </li>
               )
             })}
           </ul>
-          <div className='bg-neutral-100 h-[2px] rounded-[2px] my-14' />
+          <div className='bg-neutral-100 h-[2px] rounded-[2px] my-6' />
           <div className='flex gap-4 mb-8'>
             <SocialItem social={SOCIALS.github} />
             <SocialItem social={SOCIALS.dribble} />
