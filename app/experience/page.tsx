@@ -30,7 +30,7 @@ function Experince({ experience }: { experience: Experience }) {
 
 export default function Experinces() {
   return (
-    <div className='lg:py-6 space-y-11'>
+    <div className='lg:py-6 space-y-11 [&>:last-child]:hidden'>
       {experiences?.map(experience => (
         <Fragment key={experience.company}>
           <Experince experience={experience} />
