@@ -43,7 +43,7 @@ export default function HeaderMobile() {
         <div className='fixed inset-0 bg-neutral-100'></div>
         <nav
           className={clsx(
-            'fixed top-0 -left-[100%] transition-[left] delay-500 bottom-0 flex flex-col w-5/7 max-w-sm py-6 px-7 bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
+            'fixed top-0 -left-[100%] transition-[left] delay-500 bottom-0 flex flex-col w-9/12 max-w-sm py-6 px-5 bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
             {
               '!left-0': isOpen,
             }
@@ -67,12 +67,12 @@ export default function HeaderMobile() {
               {'Senior Front End Developer'}
             </span>
           </div>
-          <ul className='list-none mt-11 space-y-9'>
+          <ul className='list-none mt-11 space-y-7'>
             {Object.entries(navItems).map(([path, { name, icon }]) => {
               const isActive = path === pathname
               return (
                 <li key={path}>
-                  <Link href={path} className='active:bg-transparent'>
+                  <Link href={path}>
                     <NavItem name={name} isActive={isActive} icon={icon} />
                   </Link>
                 </li>
@@ -106,7 +106,7 @@ export default function HeaderMobile() {
             </div>
           </div>
         </nav>
-        <div className='space-y-4 absolute right-2 flex flex-col items-center w-1/5'>
+        <div className='space-y-4 absolute right-0 flex flex-col items-center w-3/12'>
           <div
             className='bg-neutral-900 flex justify-center items-center rounded-full h-9 w-9 text-neutral-50'
             onClick={toggle}>
