@@ -14,7 +14,7 @@ export const ROUTES: Record<string, { name: string; icon: FunctionComponent }> =
       icon: NewspapperIcon, // refactor with name
     },
     '/experience': {
-      name: 'Eperience',
+      name: 'Experience',
       icon: ClipboardIcon,
     },
     '/skill': {
