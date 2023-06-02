@@ -15,7 +15,7 @@ export default function Home() {
         }
         <br />
         {
-          'I am passionate about my work and constantly strive to improve. I am always open to constructive criticism and feedback, as I believe they are essential parts of personal and professional growth'
+          'I am passionate about my work and constantly strive to improve. I am always open to constructive criticism and feedback, as I believe they are essential parts of personal and professional growth.'
         }
       </p>
     </div>

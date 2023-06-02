@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
     end: 'Present',
     link: 'https://codetech.cc',
     bulletPoints: [
-      'eveloped a custom UI component library using React, TypeScript, and Styledcomponents for use across various applications.',
+      'Developed a custom UI component library using React, TypeScript, and Styledcomponents for use across various applications.',
       'Revamped the Corepay website utilizing React and Styled-components for an improved user experience.',
       'Created a cross-platform desktop application for a decentralized e-commerce marketplace with ElectronJs, React, and NodeJS.',
       'Employed WebSockets for efficient real-time data transfer and seamless communication between client and server.',
