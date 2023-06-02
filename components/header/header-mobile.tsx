@@ -3,13 +3,10 @@
 import { usePathname } from 'next/navigation'
 import {
   CloseIcon,
-  EmailIcon,
   EmailOutlineIcon,
   LightBulbIcon,
-  LocationIcon,
   LocationOutlineIcon,
   MenuIcon,
-  PhoneMissedCallIcon,
   PhoneOutlineIcon,
 } from '../icons'
 import { SocialItem } from './social-item'
@@ -71,7 +68,7 @@ export default function HeaderMobile() {
             {Object.entries(navItems).map(([path, { name, icon }]) => {
               const isActive = path === pathname
               return (
-                <li key={path}>
+                <li key={path} onClick={toggle}>
                   <Link href={path}>
                     <NavItem name={name} isActive={isActive} icon={icon} />
                   </Link>
