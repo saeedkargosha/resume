@@ -47,7 +47,7 @@ export default function HeaderMobile() {
         <nav
           role='navigation'
           className={clsx(
-            'fixed top-0 left-0 transition-all ease-in-out duration-500 md:transition-none w-0 py-6 px-0 bottom-0 flex flex-col  max-w-sm bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
+            'fixed top-0 left-0 transition-all ease-in-out duration-200 md:transition-none w-0 py-6 px-0 bottom-0 flex flex-col  max-w-sm bg-neutral-50 overflow-y-auto shadow-xl hide-scrollbar',
             {
               '!w-9/12 !px-5': isOpen,
             }

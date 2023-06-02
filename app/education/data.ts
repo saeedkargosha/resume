@@ -16,6 +16,6 @@ export const educations: Education[] = [
     start: '02/2020',
     end: '02/2022',
     link: 'http://80.191.169.41/ea',
-    des: 'entire stack, but my greatest strengths lie in front-end development. I have good knowledge of UI design, which allows me to bridge the gap between design and development. As a developer, I know how to deliver productive and maintainable software and take ownership of the quality of my work.',
+    des: 'During my time at university, I started an association focused on computer skills training for students. This allowed me to use my knowledge and expertise to help others learn new skills that would benefit them in their future careers.',
   },
 ]

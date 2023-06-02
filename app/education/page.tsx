@@ -18,7 +18,7 @@ function EducationItem({ education }: { education: Education }) {
           <div>{`${education.country}`}</div>
           {`(${education.start} - ${education.end})`}
         </div>
-        <p className='text-neutral-600 font-medium text-sm lg:text-base leading-7 lg:leading-9'>
+        <p className='text-neutral-600 font-medium text-sm lg:text-base leading-7 lg:leading-9 mx-2'>
           {education.des}
         </p>
       </div>
