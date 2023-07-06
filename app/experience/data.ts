@@ -36,10 +36,10 @@ export const experiences: Experience[] = [
     link: 'https://www.thinkeo.io/',
     bulletPoints: [
       'Used SaaS solution that allows the generation of custom documents in a few seconds.',
-      'Redesigned the custom documents with Slate.js and GraphQL instead of using Draft.js which helped us to improve +50% performance.',
+      'Redesigned the custom documents with Slate.js and GraphQL instead of using Draft.js which helped us to improve +40% development.',
       'Gained +60% smooth customer editor by using optimistic updates and Apollo Client.',
-      'Controlled nested attributes and content on the front-end side to reduce processing on the back-end by 40%, resulting in faster document generation and more efficient use of server resources.',
-      'Optimized the app by removing Material Components to pure components with Tailwindcss and CSS Module and Customized Webpack to speed up +75% loading pages.',
+      'Controlled nested attributes and content on the front-end side to reduce processing on the back end by 35%.',
+      'Optimized the app by removing CSS-in-JS Components to pure components with Tailwindcss and CSS Module to reduce +45% JavaScript execution and smaller bundle sizes.',
       'Published the Office plugin to reduce +90% of customer complaints who are using Microsoft Office.',
       'Achieved this startup to get +4 investments with the generation of custom documents.',
       'Using TypeScript, React, Nest.js, GraphQL, Postgres, Prisma, Slate.js, Cypress, Tailwindscss, and CSS Module.',
