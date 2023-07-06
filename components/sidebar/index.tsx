@@ -55,7 +55,7 @@ export default function Navbar() {
           {'Saeed Kargosha'}
         </h1>
         <span className='text-neutral-500 text-base font-medium'>
-          {'Senior Front End Developer'}
+          {'Senior Full Stack Developer'}
         </span>
       </div>
       <nav className='flex flex-col mt-14 w-full'>

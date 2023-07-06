@@ -75,7 +75,7 @@ export default function HeaderMobile() {
                 {'Saeed Kargosha'}
               </h1>
               <span className='text-neutral-500 text-xs font-medium '>
-                {'Senior Front End Developer'}
+                {'Senior Full Stack Developer'}
               </span>
             </div>
             <ul className='list-none mt-11 space-y-7'>
