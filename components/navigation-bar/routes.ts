@@ -26,7 +26,7 @@ export const ROUTES: Record<string, { name: string; icon: FunctionComponent }> =
       icon: AcademicCapIcon,
     },
     '/contact': {
-      name: 'Contact us',
+      name: 'Contact me',
       icon: PhoneMissedCallIcon,
     },
   }

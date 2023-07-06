@@ -15,6 +15,10 @@ export default function Home() {
         }
         <br />
         {
+          'Throughout my career, I have worked on various projects, including decentralized systems, e-commerce, and text-rich editors. I am well-versed in agile development processes and have utilized tools such as JIRA in most of my positions.'
+        }
+        <br />
+        {
           'I am passionate about my work and constantly strive to improve. I am always open to constructive criticism and feedback, as I believe they are essential parts of personal and professional growth.'
         }
       </p>

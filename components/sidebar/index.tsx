@@ -30,7 +30,7 @@ export const navItems = {
     icon: AcademicCapIcon,
   },
   '/contact': {
-    name: 'Contact Us',
+    name: 'Contact me',
     icon: PhoneMissedCallIcon,
   },
 }
