@@ -3,7 +3,7 @@ import { NavItem } from './nav-item'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import avatar from '../../app/avatar.jpg'
+import avatar from '@/assets/avatar.jpg'
 import {
   NewspapperIcon,
   ClipboardIcon,

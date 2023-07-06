@@ -1,14 +1,8 @@
-import './global.css'
+import '@/styles/global.css'
 import { Lexend } from 'next/font/google'
 import clsx from 'clsx'
-import Sidebar from '../components/sidebar'
+import Sidebar from '@/components/sidebar'
 import Header from '@/components/header/header-desktop'
-import {
-  DribbbleIcon,
-  GithubIcon,
-  LinkdinIcon,
-  MenuIcon,
-} from '@/components/icons'
 import NavigationBar from '@/components/navigation-bar'
 import HeaderMobile from '@/components/header/header-mobile'
 

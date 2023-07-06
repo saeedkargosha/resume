@@ -8,15 +8,15 @@ import {
   LocationOutlineIcon,
   MenuIcon,
   PhoneOutlineIcon,
-} from '../icons'
+} from '@/components/icons'
 import { SocialItem } from './social-item'
 import { SOCIALS } from './socials'
-import { ROUTES } from '../navigation-bar/routes'
+import { ROUTES } from '@/components/navigation-bar/routes'
 import Image from 'next/image'
-import avatar from '../../app/avatar.jpg'
-import { navItems } from '../sidebar'
+import avatar from '@/assets/avatar.jpg'
+import { navItems } from '@/components/sidebar'
 import Link from 'next/link'
-import { NavItem } from '../sidebar/nav-item'
+import { NavItem } from '@/components/sidebar/nav-item'
 import { useReducer } from 'react'
 import clsx from 'clsx'
 
