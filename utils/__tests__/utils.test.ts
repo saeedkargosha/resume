@@ -5,3 +5,9 @@ describe('storages', () => {
     expect(true).toBe(true)
   })
 })
+
+describe('fake test', () => {
+  it('should fake test', () => {
+    expect(true).toBe(true)
+  })
+})
