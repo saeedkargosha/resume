@@ -3,23 +3,7 @@ export default function Home() {
     <div className='lg:py-6 lg:px-9'>
       <p className='text-neutral-600 font-medium text-sm leading-7 lg:text-xl lg:leading-[50px]'>
         {
-          'I am a self-taught JavaScript developer with over 7 years of programming experience. I have worked on multiple international projects of various scales in mobile, web apps, and backend development.'
-        }
-        <br />
-        {
-          'My diverse background enables me to contribute across the entire stack, but my greatest strengths lie in front-end development.'
-        }
-        <br />
-        {
-          'I have good knowledge of UI design, which allows me to bridge the gap between design and development. As a developer, I know how to deliver productive and maintainable software and take ownership of the quality of my work.'
-        }
-        <br />
-        {
-          'Throughout my career, I have worked on various projects, including decentralized systems, e-commerce, and text-rich editors. I am well-versed in agile development processes and have utilized tools such as JIRA in most of my positions.'
-        }
-        <br />
-        {
-          'I am passionate about my work and constantly strive to improve. I am always open to constructive criticism and feedback, as I believe they are essential parts of personal and professional growth.'
+          'Experienced Senior Frontend Engineer skilled in web application development with a strong focus on TypeScript, React, and Next.js. With 7 years of experience, I possess a solid background in both backend and UI design, allowing me to effectively bridge the gap between design and development. My portfolio includes successful projects involving decentralized systems, e-commerce, and SaaS applications. Proficient in agile development methodologies, I have efficiently utilized tools like JIRA throughout my career. I take great pride in delivering productive and maintainable software while taking full ownership of the quality of my work.'
         }
       </p>
     </div>
